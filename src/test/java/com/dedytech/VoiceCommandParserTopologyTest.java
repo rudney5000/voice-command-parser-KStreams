@@ -48,7 +48,7 @@ class VoiceCommandParserTopologyTest {
 
     @BeforeEach
     void setUp() {
-        voiceCommandParserTopology = new VoiceCommandParserTopology(translateService, speechToTextService, 0.90);
+        voiceCommandParserTopology = new VoiceCommandParserTopology(translateService, speechToTextService);
         var voiceCommandParserTopology = this.voiceCommandParserTopology;
         var topology = voiceCommandParserTopology.createTopology();
         var props = new Properties();
